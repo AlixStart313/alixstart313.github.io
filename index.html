@@ -74,12 +74,7 @@
         const API_KEY = 'qoYxVyNFMzULuRsdU7vGVzFzm7Tx7SI8';
 
         function buscar() {
-            const ram = document.getElementById('ramdomGif');
-            const tit = document.getElementById('titulo');
-            const buscador=document.getElementById('busqueda');
-            const gifes=document.getElementById('resultados');
-            document.getElementById('muestra').replaceChild(buscador,ram);
-            document.getElementById('muestra').replaceChild(gifes, tit);
+            
         }
         const inputSearch = document.getElementById('search');
         inputSearch.onkeyup = async (event) => {
@@ -118,12 +113,7 @@
 
         const inputRamdom = document.getElementById('ramdom');
         inputRamdom.onclick = async (event) => {
-            const ram = document.getElementById('ramdomGif');
-            const tit = document.getElementById('titulo');
-            const buscador=document.getElementById('busqueda');
-            const gifes=document.getElementById('resultados');
-            document.getElementById('muestra').replaceChild(ram, buscador);
-            document.getElementById('muestra').replaceChild(tit, gifes);
+            
             const response = await fetch(
                 `https://api.giphy.com/v1/gifs/random?api_key=qoYxVyNFMzULuRsdU7vGVzFzm7Tx7SI8`
             );
